@@ -1,7 +1,7 @@
-package person.service.impl;
+package homework2023_12_21.person.service.impl;
 
-import person.entity.PersonEntity;
-import person.service.PersonDAO;
+import homework2023_12_21.person.entity.PersonEntity;
+import homework2023_12_21.person.service.PersonDAO;
 
 public class PersonDAOImpl implements PersonDAO {
 	private PersonEntity personEntity;
@@ -24,8 +24,9 @@ public class PersonDAOImpl implements PersonDAO {
 	}
 
 	@Override
-	public PersonEntity find() {
-		return personEntity;
+	public PersonEntity find(int personFind) {
+		return null;
 	}
+
 
 }

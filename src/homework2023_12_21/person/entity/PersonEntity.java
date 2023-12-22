@@ -1,9 +1,10 @@
-package person.entity;
+package homework2023_12_21.person.entity;
 
 import java.util.Date;
 import java.util.StringJoiner;
 
 public class PersonEntity {
+	private Integer id;
 	private String name;
 	private int age;
 	private Date birthday;
@@ -12,11 +13,20 @@ public class PersonEntity {
 	public PersonEntity() {
 	}
 
-	public PersonEntity(String name, int age, Date birthday, String gander) {
+	public PersonEntity(Integer id, String name, int age, Date birthday, String gander) {
+		this.id = id;
 		this.name = name;
 		this.age = age;
 		this.birthday = birthday;
 		this.gander = gander;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getName() {
